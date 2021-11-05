@@ -1,8 +1,6 @@
 import os
 from pixboard import *
-import numpy
 from PIL import Image
-import io
 #import Image
 #from matplotlib import pyplot as plt
 
@@ -47,6 +45,6 @@ def kuvaPilt(fail):
     image.show()
     
 
-kuvaPilt("wut.png")
+#kuvaPilt("wut.png")
 
 
