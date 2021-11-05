@@ -1,11 +1,8 @@
+import os
 def kuvaFailiSisu(fail):
     f = open(fail, "r+", encoding="UTF-8")
     for data in f:
-        if len(data) <= 1:
-            continue
-        else:   
-            rida = data.strip()
-            print(rida)
+        print(data)
     f.close()
 
 def lisaFail(fail):
@@ -16,4 +13,13 @@ def kustutaFail(fail):
     f = open(fail, "w+", encoding="UTF-8")
 
 def loetleFailid():
-    pass
+    #for subdir, dirs, files in os.walk('./'):
+    #    for file in files:
+    #        print(file)
+    sisu = os.listdir(".")
+    for x in sisu:
+        print(x)
+
+
+
+loetleFailid()
