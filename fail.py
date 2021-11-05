@@ -1,5 +1,10 @@
 import os
-import curses
+from pixboard import *
+import numpy
+from PIL import Image
+import io
+#import Image
+#from matplotlib import pyplot as plt
 
 def kuvaFailiSisu(fail):
     f = open(fail, "r+", encoding="UTF-8")
@@ -37,7 +42,11 @@ def loetleFailid(path=".", laiend=None):
             if x.endswith(laiend):
                 print(x)
 
-
 def kuvaPilt(fail):
-    pass
-loetleFailid(".", ".png")
+    image = Image.open(fail)
+    na = image.load()
+    print(na)
+
+kuvaPilt("wut.png")
+
+
