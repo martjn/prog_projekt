@@ -44,8 +44,8 @@ def loetleFailid(path=".", laiend=None):
 
 def kuvaPilt(fail):
     image = Image.open(fail)
-    na = image.load()
-    print(na)
+    image.show()
+    
 
 kuvaPilt("wut.png")
 
