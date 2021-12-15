@@ -1,2 +1,0 @@
-# prog_projekt
-Pog
